@@ -1,0 +1,104 @@
+.topten-card-component-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin: 15px 0;
+    text-decoration: none;
+    color: #000;
+    
+    &:hover .topten-card-image-box > img {
+        transform: rotate(-5deg);
+    }
+
+    .topten-card-image-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 120px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            box-shadow: 1px 1px 4px 1px #0009;
+            transition: 0.3s all ease-in;
+        }
+    }
+
+    .topten-card-content-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        padding-left: 24px;
+
+        p {
+            color: #939393;
+        }
+
+        .topten-card-date-box {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #939393;
+            }
+
+            p {
+                margin: 0 15px;
+                font-size: 14px;
+                color: #939393;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width:482px) {
+    .topten-card-component-box {
+        width: 100%;
+        margin: 15px 0;
+        
+        &:hover .topten-card-image-box > img {
+            transform: rotate(-5deg);
+        }
+    
+        .topten-card-image-box {
+            width: 200px;
+            height: 120px;
+        }
+    
+        .topten-card-content-box {
+            strong {
+                font-size: 14px;
+            }
+    
+            p {
+                color: #939393;
+                font-size: 12px;
+                padding: 0;
+            }
+    
+            .topten-card-date-box {
+                span {
+                    font-size: 12px;
+                }
+    
+                p {
+                    margin: 0 5px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

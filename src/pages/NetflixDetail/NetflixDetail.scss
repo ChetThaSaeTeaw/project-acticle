@@ -1,0 +1,184 @@
+.netflix-detail-template-container {
+    width: 100%;
+    height: 100%;
+
+    .netflix-detail-template-wrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 24px;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 60px 0;
+        background: #171717;
+
+        .netflix-detail-template-wallpaper-box {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 300px;
+            padding: 24px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: center;
+            background-attachment: fixed;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: #0004;
+            }
+
+            h2, h4 {
+                color: #fff;
+                z-index: 1;
+            }
+
+            h2 {
+                font-size: 28px;
+                margin: 25px 0;
+            }
+        }
+
+        .netflix-detail-template-detail-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 36px;
+            color: #fff;
+            border-top: 4px solid #f7ff00;
+            border-bottom: 4px solid #f7ff00;
+
+            .netflix-detail-template-detail-poster-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 200px;
+                height: 250px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 4px;
+                    margin: 25px 0;
+                    box-shadow: 1px 1px 2px 1px #fff7;
+                }
+            }
+
+            .netflix-detail-template-detail-content-box {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                padding-left: 5%;
+
+                p {
+                    margin: 10px 0;
+                }
+            }
+        }
+
+        .netflix-detail-template-content-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 24px;
+            color: #fff;
+
+            strong {
+                width: 100%;
+                text-align: center;
+            }
+
+            p {
+                margin: 25px 0;
+                width: 80%;
+                text-indent: 10%;
+            }
+
+            h2 {
+                margin: 0 0 15px 0;
+            }
+
+            iframe {
+                width: 516px;
+                height: 315px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width:482px) {
+    .netflix-detail-template-container {
+        .netflix-detail-template-wrap {
+            padding: 0px;
+            max-width: 600px;    
+            .netflix-detail-template-wallpaper-box {
+                height: 250px;
+                padding: 24px;
+                text-align: center;
+    
+                h2 {
+                    font-size: 26px;
+                    margin: 20px 0;
+                }
+
+                h4 {
+                    font-size: 14px;
+                }
+            }
+    
+            .netflix-detail-template-detail-box {
+                padding: 24px;    
+                .netflix-detail-template-detail-poster-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 160px;
+                    height: 200px;
+                }
+    
+                .netflix-detail-template-detail-content-box {
+                    padding-left: 10%;
+    
+                    p {
+                        margin: 5px 0;
+                    }
+                }
+            }
+    
+            .netflix-detail-template-content-box {
+                padding: 24px;
+                p {
+                    margin: 15px 0;
+                    width: 100%;
+                }
+    
+                h2 {
+                    margin: 0 0 15px 0;
+                }
+    
+                iframe {
+                    width: 80%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

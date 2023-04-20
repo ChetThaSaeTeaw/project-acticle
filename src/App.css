@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+:root {
+  --fontText : 'Prompt', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body  {
+  font-family: var(--fontText);
+}
+
+button {
+  font-family: var(--fontText);
+}

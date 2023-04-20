@@ -1,0 +1,92 @@
+.suggest-article-container {
+    width: 100%;
+    height: 100%;
+
+    .suggest-article-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 24px;
+
+        h1 {
+            width: 100%;
+            text-align: start;
+            letter-spacing: 0.3em;
+            color: #fff;
+            font-size: 2em;
+            margin: 0 0 25px 0;
+            border-bottom: 3px solid #fff;
+        }
+
+        .suggest-article-content-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+
+            .suggest-article-content-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 30%;
+                margin: 10px;
+                text-decoration: none;
+
+                
+            &:hover div > img {
+                transform: scale(1.05);
+            }
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    overflow: hidden;
+    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        transition: 0.3s all ease-in;
+                    }
+                }
+
+                p {
+                    width: 100%;
+                    text-align: start;
+                    color: #fff;
+                    font-size: 18px;
+                    margin: 15px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:482px) {
+    .suggest-article-container { 
+        .suggest-article-wrap {
+            padding: 12px;
+    
+            h1 {
+                font-size: 1.4em;
+            }
+    
+            .suggest-article-content-wrap {
+                .suggest-article-content-box {
+                    width: 45%;
+                    margin: 5px;
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

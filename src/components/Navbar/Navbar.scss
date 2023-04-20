@@ -1,0 +1,172 @@
+.navbar-top-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    padding: 12px 12%;
+    background: #000;
+    cursor: pointer;
+    z-index: 90;
+
+    .navbar-top-logo-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+
+        a {
+            width: 100%;
+            text-decoration: none;
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .navbar-top-menu-box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+
+        li {
+            margin: 0 10px;
+            list-style: none;
+
+            &:hover a {
+                background: #fff;
+                border: 1px solid #000;
+                color: #000;
+            }
+
+            a {
+                text-decoration: none;
+                padding: 12px;
+                color: #fff;
+                border: 1px solid #000;
+                transition: 0.3s all ease-in;
+                border-radius: 4px;
+            }
+
+            .route-selected {
+                background: #fff;
+                border: 1px solid #000;
+                color: #000;
+            }
+        }
+    }
+
+    .navbar-top-submenu-icon {
+        display: none;
+    }
+
+    // Submenu 
+    .submenu-container {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 821px) {
+    .navbar-top-container {
+        padding: 12px;
+    
+        .navbar-top-logo-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+    
+            a {
+                width: 100%;
+                text-decoration: none;
+    
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    
+        .navbar-top-menu-box {
+            display: none;
+        }
+
+        .navbar-top-submenu-icon {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            color: #fff;
+            width: 50%;
+
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 1.7em;
+            }
+        }
+    
+        // Submenu 
+        .submenu-container {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            z-index: 90;
+            background: #0009;
+            transition: 0.3s all ease-in;
+            transform: translateX(100%);
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                height: 100%;
+                padding: 24px;
+
+                li {
+                    text-align: center;
+                    width: 100%;
+                    list-style: none;
+                    margin: 5px 0;
+
+                    &:hover a {
+                        background: #fff;
+                        color: #000;
+                        border: 1px solid #fff;
+                    }
+
+                    a {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        text-decoration: none;
+                        padding: 12px;
+                        color: #fff;
+                        border-radius: 4px;
+                        transition: 0.3s all ease-in;
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.anime-page-container {
+    width: 100%;
+    height: 100%;
+    padding: 70px 0 0 0;
+
+    .anime-page-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 1100px;
+        margin: 0 auto;
+
+        .anime-page-carousel-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        h1 {
+            margin: 25px 0 10px 0;
+        }
+
+        .anime-page-article-card-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            padding: 24px 0;
+
+            .anime-page-article-card-box {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                padding: 24px;
+            }
+
+            .readmore-button {
+                padding: 12px 24px;
+                text-align: center;
+                border-radius: 7px;
+                background: #000;
+                color: #fff;
+                border: 1px solid #fff;
+                transition: 0.3s all ease-in;
+                cursor: pointer;
+
+                &:hover {
+                    background: #fff;
+                    border: 1px solid #000;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:482px) {
+    .anime-page-container {    
+        .anime-page-wrap {
+            max-width: 600px;
+            h1 , p {
+                text-align: center;
+                padding: 0 12px;
+                margin: 10px 0;
+            }
+            .anime-page-article-card-wrap {
+                padding: 0;    
+                .anime-page-article-card-box {
+                    padding: 24px 12px;
+                }
+            }
+        }
+    }
+}
