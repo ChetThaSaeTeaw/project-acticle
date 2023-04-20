@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import Store from './stores/Store';
 
 // CSS
-import './App.css'
+import './App.scss'
 
 // Components
 import Navbar from './components/Navbar/Navbar';

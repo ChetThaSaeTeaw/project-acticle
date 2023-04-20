@@ -6,10 +6,14 @@
     height: 100%;
     margin: 15px 0;
     text-decoration: none;
-    color: #000;
+    color: var(--whiteColor);
     
     &:hover .topten-card-image-box > img {
         transform: rotate(-5deg);
+    }
+
+    &:hover {
+        color: var(--mainColor);
     }
 
     .topten-card-image-box {

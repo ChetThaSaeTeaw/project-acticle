@@ -16,7 +16,7 @@ function ArticleCard({ article }) {
           <span className='article-book-icon'><BsBook /></span>
         </div>
         <div className='article-card-content'>
-            <h3>{article.title}</h3>
+            <h3>{article.title.length < 30 ? article.title : article.title.substr(0 , 27) + "..." }</h3>
             <p>{article.date}</p>
             <span>อ่านเพิ่มเติม</span>
         </div>

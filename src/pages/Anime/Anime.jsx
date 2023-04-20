@@ -64,7 +64,7 @@ function Anime() {
               {showCards < articleData.article_anime.length ? "แสดงเพิ่มเติม" : "แสดงทั้งหมดแล้ว" }
             </button>
         </div>
-        <><ToptenArticle data={articleData.article_anime} /></>
+        <><ToptenArticle data={articleData.article_anime} cate="อนิเมะ" /></>
       </div>
     </section>
   )

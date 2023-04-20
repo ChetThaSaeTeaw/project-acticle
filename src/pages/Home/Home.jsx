@@ -64,7 +64,7 @@ function Home() {
               {showCards < articleData.article_movies.length ? "แสดงเพิ่มเติม" : "แสดงทั้งหมดแล้ว" }
             </button>
         </div>
-        <><ToptenArticle data={articleData.article_movies} /></>
+        <><ToptenArticle data={articleData.article_movies} cate="หนัง" /></>
       </div>
     </section>
   )

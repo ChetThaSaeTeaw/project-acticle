@@ -39,15 +39,15 @@ function Netflix() {
   },[]);
 
   return (
-    <section className='home-page-container'>
-      <div className='home-page-wrap'>
-        <div className='home-page-carousel-box'>
+    <section className='netflix-page-container'>
+      <div className='netflix-page-wrap'>
+        <div className='netflix-page-carousel-box'>
           <ArticleListing />
         </div>
         <h1>รีวิวหนัง Netflix</h1>
         <p>เว็บรีวิวหนัง รีวิวหนังใหม่ ตัวอย่างหนัง อัพเดทรีวิวหนังใหม่ ปี 2022</p>
-        <div className='home-page-article-card-wrap'>
-            <div className='home-page-article-card-box'>
+        <div className='netflix-page-article-card-wrap'>
+            <div className='netflix-page-article-card-box'>
               {articleData.article_netflix.slice(0 , showCards).map((article , index) => {
                 return (
                   <React.Fragment key={index}>
@@ -64,7 +64,7 @@ function Netflix() {
               {showCards < articleData.article_netflix.length ? "แสดงเพิ่มเติม" : "แสดงทั้งหมดแล้ว" }
             </button>
         </div>
-        <><ToptenArticle data={articleData.article_netflix} /></>
+        <><ToptenArticle data={articleData.article_netflix} cate="Netflix" /></>
       </div>
     </section>
   )

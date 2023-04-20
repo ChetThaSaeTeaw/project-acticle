@@ -2,6 +2,8 @@
 
 :root {
   --fontText : 'Prompt', sans-serif;
+  --mainColor : #FF1B76;
+  --whiteColor : #FFF9FB;
 }
 
 * {
@@ -16,6 +18,7 @@ html {
 
 body  {
   font-family: var(--fontText);
+  background: #ededed;
 }
 
 button {

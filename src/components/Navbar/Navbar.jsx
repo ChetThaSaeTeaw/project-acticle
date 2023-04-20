@@ -8,6 +8,9 @@ import "./Navbar.scss";
 import { FaBars } from 'react-icons/fa';
 import { MdClose } from 'react-icons/md';
 
+// Images
+import brandLogo from '../../assets/Images/etc/Logo-2.png';
+
 function Navbar() {
 
     const [ showNavbar , setShowNavbar ] = useState(false);
@@ -24,7 +27,7 @@ function Navbar() {
         <Submenu navbarList={navbarList}  showNavbar={showNavbar} />
         <div className='navbar-top-logo-box'>
             <Link to="/">
-                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/lion-head-logo-design-template-free-gold-f1effbb505e9610e66caa94f2d26dea2_screen.jpg?ts=1634993027" alt="brand-logo" loading='lazy' />
+                <img src={brandLogo} alt="brand-logo" loading='lazy' />
             </Link>
         </div>
         <ul className='navbar-top-menu-box'>

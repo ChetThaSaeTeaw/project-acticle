@@ -10,11 +10,13 @@
     border-radius: 4px;
     border: 1px solid #000;
     margin: 15px;
+    background: #000;
+    color: var(--mainColor);
     transition: 0.3s all ease-in;
     cursor: pointer;
 
     &:hover {
-        background: #000;
+        background: var(--mainColor);
         color: #fff;
     }
 
@@ -77,7 +79,7 @@
 @media only screen and (min-width:321px) and (max-width:482px) {
     .article-card-box {
         width: 45%;
-        min-height: 100%;
+        min-height: 200px;
         margin: 5px;
 
         .article-card-image {

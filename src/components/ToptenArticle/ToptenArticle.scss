@@ -15,10 +15,10 @@
             width: 100%;
             text-align: start;
             letter-spacing: 0.3em;
-            color: #000;
+            color: var(--whiteColor);
             font-size: 2em;
             margin: 0 0 25px 0;
-            border-bottom: 3px solid #000;
+            border-bottom: 3px solid var(--mainColor);
         }
 
         .topten-article-content-wrap {

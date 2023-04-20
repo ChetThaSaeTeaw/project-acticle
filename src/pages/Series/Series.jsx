@@ -64,7 +64,7 @@ function Series() {
               {showCards < articleData.article_series.length ? "แสดงเพิ่มเติม" : "แสดงทั้งหมดแล้ว" }
             </button>
         </div>
-        <><ToptenArticle data={articleData.article_series} /></>
+        <><ToptenArticle data={articleData.article_series} cate="ซีรีย์" /></>
       </div>
     </section>
   )

@@ -3,17 +3,20 @@ import React from 'react';
 // CSS
 import "./Footer.scss";
 
+// Images
+import brandLogo from '../../assets/Images/etc/Logo-2.png';
+
 function Footer() {
   return (
     <section className='footer-container'>
       <div className='footer-left-box'>
-        <h2>MOVIESKIMI</h2>
+        <h2>CINEMAGIC</h2>
         <p>subtitle</p>
         <hr />
-        <footer>copyright © 2023 | MOVIESKIMI.COM</footer>
+        <footer>copyright © 2023 | CINEMAGIC.COM</footer>
       </div>
       <div className='footer-right-box'>
-          <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/lion-head-logo-design-template-free-gold-f1effbb505e9610e66caa94f2d26dea2_screen.jpg?ts=1634993027" alt="logo-pic" loading='lazy' />
+          <img src={brandLogo} alt="logo-pic" loading='lazy' />
       </div>
     </section>
   );

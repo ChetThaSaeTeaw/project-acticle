@@ -59,8 +59,8 @@
             width: 100%;
             padding: 36px;
             color: #fff;
-            border-top: 4px solid #f7ff00;
-            border-bottom: 4px solid #f7ff00;
+            border-top: 4px solid var(--mainColor);
+            border-bottom: 4px solid var(--mainColor);
 
             .anime-template-detail-poster-box {
                 display: flex;
@@ -74,7 +74,7 @@
                     height: 100%;
                     border-radius: 4px;
                     margin: 25px 0;
-                    box-shadow: 1px 1px 2px 1px #fff7;
+                    box-shadow: 1px 1px 2px 1px var(--mainColor);
                 }
             }
 
